@@ -1,0 +1,53 @@
+.page-wrapper {
+  height: 200vh;
+  width: 100%;
+  background-color: #000;
+
+  @media only screen and (max-width: 900px) {
+    .page-wrapper {
+      height: 200vh;
+      width: 100%;
+    }
+  }
+
+  img {
+    position: absolute;
+    height: 50%;
+    object-fit: contain;
+    top: 75%;
+    left: 50%;
+    z-index: 2;
+  }
+
+  .text-parent {
+    position: absolute;
+    display: block;
+    top: 35%;
+    width: 100%;
+
+    &:first-of-type {
+      z-index: 1;
+    }
+    &:last-of-type {
+      z-index: 3;
+    }
+    h1 {
+      color: white;
+      line-height: 110%;
+      font-size: 5rem;
+      white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      font-weight: bold;
+      font-family: sans-serif;
+      &.outline {
+        -webkit-text-stroke: 3px white;
+        text-stroke: 1px white;
+        color: transparent;
+      }
+      &:last-of-type {
+        margin-left: -30%;
+      }
+    }
+  }
+}
