@@ -50,6 +50,6 @@ export default function Home() {
           I really got motivated when I have doubters
         </h1>
       </div>
-    </div>
+    </div >
   )
 }
